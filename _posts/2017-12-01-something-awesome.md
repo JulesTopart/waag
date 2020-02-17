@@ -1,15 +1,13 @@
 ---
-title: Something Awesome!
+title: Setting up Jekyll
 tags:
-- Curabitur
-- Dolor
-- Id
-- Facilisis
-desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula gravida felis et dapibus.
+- Jekyll
+- Ubuntu
+- Linux
+desc: Sample Post
 layout: post
 ---
 
-Curabitur dolor nisi, consectetur id ipsum et, facilisis aliquet est. Aenean nec iaculis nisi. Quisque non nisl eu leo ultrices rhoncus. Pellentesque at euismod est. Pellentesque ac nisi semper, molestie risus vitae, ullamcorper augue. Fusce non eleifend massa, vel mattis urna. Morbi facilisis rutrum eleifend.
 <!-- more -->
  Mauris a molestie neque. Aliquam non malesuada nisi, a sodales purus. Nam molestie faucibus sapien eu euismod. Sed scelerisque ornare euismod. In tincidunt est vel pharetra convallis. Praesent vitae nisi odio.
 
