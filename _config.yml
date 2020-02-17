@@ -1,41 +1,18 @@
-title: Jules @ Waag
-author: JulesTopart
-email: jules@waag.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  The projects I've been involvd in during my internship at Waag.
-show_excerpts: true # set to true to show excerpts on the homepage
-baseurl:
-
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-
-permalink: /posts/:title/
-texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-  style: black
-  showNav: false
-  showPicker: true
-
-  # generate social links in footer
-  social_links:
-    twitter: JulesTopart
-    github:  JulesTopart
-    linkedIn: in/JulesTopart
-    rss: rss
- 
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.mds
-
-# Build settings
-# theme: texture
-
-plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+---
+title: Minimal Text
+baseurl: "/Minimal-Text"
+desc: A minimal blog for off-topic blog entries.
+about: I am a web developer, software engineer, and project manager currently living in Collinsville, Illinois. I'm a little weird but pretty friendly.
+image: https://pinto-light.glitch.me/?width=500&height=500&url=https://i.imgur.com/mxUVc2x.jpg&extension=jpg
+excerpt_separator: "<!-- more -->"
+markdown: kramdown
+gems:
+- jekyll-paginate
+exclude:
+  - .jekyll-metadata
+  - README.md
+  - CNAME
+paginate: 5
+paginate_path: "/:num/"
+highlighter: rouge
+permalink: pretty
