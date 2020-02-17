@@ -1,66 +1,68 @@
-# Edition
+## The "What ?" and the "Why ?"
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+**Carte** is a simple Jekyll based documentation website for APIs. It is designed as a boilerplate to build your own documentation and is heavily inspired from [Swagger](http://swagger.wordnik.com/) and [I/O docs](http://www.mashery.com/product/io-docs). Fork it, add specifications for your APIs calls and customize the theme. <small>Go ahead, see if we care.</small>
 
-![Edition template screenshot](images/_screenshot.png)
+We built **Carte** because the existing options (Swagger and the likes) were trying to do too much and did not match our needs:
 
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+1. Most of our API calls are sending JSON objects, as opposed to a series of parameters,
+1. Being able to query the real API is nice, but running anything but `GET` calls can get tricky ("What do you mean I deleted my stuff? I was just trying out the API calls!"),
+1. Overall, setting up a separate server for what really requires a good static documentation seemed overkill.
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+The real value of **Carte** is its structure for describing APIs, not its underlying technical stack (or lack-thereof). In a nutshell; **we built a static template for your API documentation, feel free to re-use it**.
 
-## Features
+## Install
 
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+It' Jekyll god dammit:
 
-## Setup
+1. Clone this repository on your local,
+1. [Install Jekyll](https://github.com/mojombo/jekyll/wiki/install),
+1. Go at the root of the repository and run ```jekyll serve --watch```,
+1. Go to http://localhost:4000,
+1. [Great success! High five!](http://www.youtube.com/watch?v=wWWyJwHQ-4E)
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+## How to...
 
-## Develop
+### Adding a new API call
 
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+You can add a new API call by simply adding a new post in the `_posts` folder. Jekyll by default forces you to specify a date in the file path: it makes us sad pandas too, but you'll have to stick to this format. You can use dates to control the order in which API calls are displayed in the interface.
 
-Install the dependencies with [Bundler](http://bundler.io/):
+Each API call can define a few values in its YAML header:
 
-~~~bash
-$ bundle install
-~~~
+Variable | Mandatory | Default | Description
+--- | --- | --- | ---
+``title`` | Y | - | A short description of what that calls does.
+``path`` | N | - | The URL for the API call, including potential parameters.
+``type`` | N | - | Set it to `PUT`, `GET`, `POST`, `DELETE` or nothing (for parts of your documentation that do not relate to an actual API call).
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+A typical header:
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+```
+---
+path: '/stuff/:id'
+title: 'Delete a thing'
+type: 'DELETE'
 
-## Editing
+layout: nil
+---
+```
 
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
+We then describe the request and response (or whatever else you wish to talk about) in the body of our post. Check the placeholders present in the `_posts` folder to get an idea of what it can look like.
 
-### Documentation pages
+### Grouping calls
 
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
+Adding a category to your YAML header will allows you to group methods in the navigation. It is particularly helpful as you start having a lot of methods and need to organize them. For example:
 
-### Change log
+```
+---
+category: Stuff
+path: '/stuff/:id'
+title: 'Delete a thing'
+type: 'DELETE'
 
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
+layout: nil
+---
+```
 
-### Search
+### Edit the design
 
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.
+The default UI is mostly described through the `css/style.css` file and a couple short jQuery scripts in the `/_layouts/default.html` layout. Hack it to oblivion.
