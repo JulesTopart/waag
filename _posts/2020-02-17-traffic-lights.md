@@ -1,13 +1,14 @@
 ---
 title: Traffic light for testing autonomous vechicles ...
 tags:
-- Jekyll
-- Ubuntu
-- Linux
-desc: Just a Sample Post
+- Eagle
+- Fusion 360
+- Electronic design
+- PCB
+
+desc: A simple project to train myself to the PCB designing process.
 layout: post
 ---
-A simple project to train myself to the PCB designing process.
 
 <!-- more -->
 #### Why ?
@@ -26,6 +27,12 @@ I've decided to work on the traffic light. This is more like a test than a serio
 5. A precise milling machine ( like modela )
 6. 9v battery
 
+The shematics : 
+
 <img src="{{site.baseurl}}/assets\img\17-02-shematic.JPG">
+
+
+##### Useful libraries :
+- Fab Library : [Github](https://gitlab.cba.mit.edu/pub/libraries/tree/master/eagle)
 
 
