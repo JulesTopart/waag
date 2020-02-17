@@ -1,5 +1,5 @@
 ---
-title: Traffic light for autonomous vechicles testing...
+title: Traffic light for testing autonomous vechicles ...
 tags:
 - Jekyll
 - Ubuntu
