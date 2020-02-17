@@ -1,28 +1,66 @@
-# Minimal Text
+# Edition
 
-Minimal Text is a clean and lightweight Jekyll Theme
+Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
+Start documenting your product, application, service or website with this configurable theme.
 
-## Documentation
+![Edition template screenshot](images/_screenshot.png)
 
-__Baseurl__
+Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
-```yaml
----
-title: Minimal Text
-baseurl: "/Minimal-Text"
-```
-The site baseurl is prepended to asset links and the home button in the `post.html` layout. Please note it must start with a "/"
-By changing this you are changing the location of your website. gh.clarkhacks.com`/Minimal-Text` is the location of Minimal-Text in my case.
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
-__Pagination__
+## Features
 
-```yaml
-paginate: 5
-paginate_path: "/:num/"
-```
-`paginate` in `_config.yml` is the number of post blocks that will appear on a single page.
-`paginate_path` is at what location your blog pages will be displayed.
+* Two column layout
+* Full text search
+* Pre-styled components
+* Auto-generated navigation based on category
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* Change log
+* RSS/Atom feed
+* SEO tags
+* Google Analytics
 
-__The documentation has been implemented because of user questions.__ For more documentation to be please request what you need defined.
+## Setup
 
-![screenshot](screenshot.jpg)
+1. Add your site and author details in `_config.yml`.
+2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+
+## Develop
+
+Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+
+Install the dependencies with [Bundler](http://bundler.io/):
+
+~~~bash
+$ bundle install
+~~~
+
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
+
+~~~bash
+$ bundle exec jekyll serve
+~~~
+
+## Editing
+
+Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
+
+### Documentation pages
+
+* Add, update or remove a documentation page in the *Documentation* collection.
+* Change the category of a documentation page to move it to another section in the navigation.
+* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
+
+### Change log
+
+* Add, update or remove change log entries from your posts.
+* Tag entries as minor or major in the front matter.
+
+### Search
+
+* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
+
+### Navigation
+
+* Change `site.show_full_navigation` to control all or only the current navigation group being open.

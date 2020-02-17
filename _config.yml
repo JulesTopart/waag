@@ -1,18 +1,74 @@
----
 title: Jules @ Waag
-baseurl: ""
-desc: A useful stack of knowledge...
-about: I'm a coding lizard
-image: https://pinto-light.glitch.me/?width=500&height=500&url=https://i.imgur.com/mxUVc2x.jpg&extension=jpg
-excerpt_separator: "<!-- more -->"
-markdown: kramdown
-gems:
-- jekyll-paginate
-exclude:
-  - .jekyll-metadata
-  - README.md
-  - CNAME
-paginate: 5
-paginate_path: "/:num/"
-highlighter: rouge
+baseurl:
+show_full_navigation: true
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: Product documentation template for Jekyll.
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+social:
+  name: Edition Template
+  links:
+    - https://github.com/CloudCannon/edition-jekyll-template
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
 permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  docs:
+    title: Documentation
+    permalink: /:path/
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+      _options:
+        content:
+          width: 800
+          height: 2000
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      _comments:
+        type: Marks the impact of this release
+
+# -----------
+# CloudCannon
+
+types:
+  - minor
+  - major
