@@ -4,7 +4,7 @@ baseurl: "/home"
 url: "haystackly.fr"
 desc: A minimal blog for off-topic blog entries.
 about: I'm a coding lizard.
-image: https://pinto-light.glitch.me/?width=500&height=500&url=https://i.imgur.com/mxUVc2x.jpg&extension=jpg
+image: https://pbs.twimg.com/profile_images/1079097017551462402/5Gz0T3et_400x400.jpg
 excerpt_separator: "<!-- more -->"
 markdown: kramdown
 gems:
