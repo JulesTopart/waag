@@ -1,5 +1,5 @@
 ---
-title: Traffic light for testing autonomous vechicles ...
+title: Project Ideas
 tags:
  - Fablab
  - Makers
