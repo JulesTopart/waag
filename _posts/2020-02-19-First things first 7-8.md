@@ -1,5 +1,5 @@
 ---
-title: The Waag FabLab 1/8 (3D Printing)
+title: The Waag FabLab 7/8 (Electronics)
 tags:
 - Cura
 - 3D Printing

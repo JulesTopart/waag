@@ -1,5 +1,5 @@
 ---
-title: The Waag FabLab 1/8 (3D Printing)
+title: The Waag FabLab 8/8 (Coffee making :3)
 tags:
 - Cura
 - 3D Printing
