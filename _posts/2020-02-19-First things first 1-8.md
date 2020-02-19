@@ -12,6 +12,9 @@ layout: post
 First things first, the lab !
 Today Michelle have introduce the lab's machines to me ( Or maybe she introduce me to the machine ?).
 I've decided to write a guide for futur new people in the lab. Hope it will be useful... 
+
+1/8 The 3D Printers
+
 <!-- more -->
 
 ### 3D Printers
@@ -83,16 +86,5 @@ These red region mean that there aren't support enough by the previous layers. A
 <img src="{{site.baseurl}}/assets/img/post-fablab/cura-angle.JPG">
 
 WIP
-
-
-
-
-
-
-
-
-
-
-
 
 
