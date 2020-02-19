@@ -1,13 +1,12 @@
 ---
-title: ShopBot calculator
+title: The Waag FabLab 1/8 (3D Printing)
 tags:
-- Fusion 360
-- Milling machine
-- Shopbot
-- Aluminium
-- Wood carving
+- Cura
+- 3D Printing
+- 3D Slicing
+- Maker Tips
 
-desc: Documentation about shopbot and milling in general
+desc: Documentation about 3D printer in the lab
 layout: post
 ---
 First things first, the lab !
