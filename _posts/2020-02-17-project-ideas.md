@@ -18,3 +18,9 @@ Projects ideas :
 - Model of makerfight robot
 - Interactive object for boltly
 - Art ?
+- Quantum for children
+- See positon from banana
+- Replace the laser board
+- Create a slicer with fabmodules
+- Fix the strange 3D printer with new botls and new slider ?
+
